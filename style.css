@@ -1,63 +1,276 @@
 body {
     font-family: 'Raleway', sans-serif;
     position: absolute;
-    top: 20%;
-    height: 80%;
-    left: 50%;
+    top: 0;
+    width: 100%;
     margin: 0;
-    margin-left: -200px;
-    width: 400px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-#wrapper {
-    min-height: 100%;
-    height: auto !important;
-    margin: 0 auto -3em;
+a {
+    text-decoration: none !important;
+}
+
+nav {
+    top: 0;
+}
+
+.spacer {
+    margin-bottom: 10%;
+}
+
+nav * {
+    height: 40px;
+    color: white;
+    transition: all 0.3s;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+#rightlinks {
+    float: right;
+}
+
+#rightlinks * {
+    padding: 7px 10px;
+}
+
+#rightlinks > a:nth-child(1) {
+    border-right: solid 1px white;
+}
+
+nav a:hover {
+    color: black;
+    background: white;
+}
+
+#home {
+    display: inline-block;
+    background-image: url('icons/favicon-inverse.png');
+    background-size: 30px 30px;
+    background-position: 5px 2px;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    padding-right: 7px;
+}
+
+#home:hover {
+    background-image: url('favicon.png');
+}
+
+.wrapper {
+    width: 600px;
+    left: 50%;
+    position: relative;
+    margin-left: -300px;
+}
+
+.stretch {
+    background: black;
+    width: 100%;
 }
 
 #icons {
-    font-size: 65px;
+    font-size: 95px;
     margin-top: 100px;
-}
-
-[class^="icon-"] {
+    padding: 40px 0;
     text-align: center;
-    color: black;
-    width: 72px !important;
-    border-radius: 10px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
-[class^="icon-"]:hover {
+.link {
     color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.3s;
     background: black;
 }
 
-a [class^="icon-"] {
-    text-decoration: none;
+.link:hover {
+    color: black;
+    background: white;
 }
 
-footer {
-    bottom: 0;
-    font-size: 12px;
-    height: 2em;
+.fa {
+    text-align: center;
+    width: 110px !important;
 }
 
 body p {
     margin: 0;
-    margin-bottom: 15px;
 }
 
-p:nth-child(1) {
-    font-size: 25px;
+#home1 {
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
-p:nth-child(2) {
-    font-size: 80px;
+#home2 {
+    font-size: 120px;
+    text-align: center;
+    line-height: 1.2;
 }
 
-p:nth-child(3) {
-    font-size: 35px;
+#home3 {
+    font-size: 40px;
+}
+
+#home4 {
+    margin-top: 20px;
+    font-size: 60px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#home4 a {
+    width: 60px;
+}
+
+#likes {
+    padding: 20px 0;
+}
+
+#left {
+    position: absolute;
+    left: 0%;
+}
+
+#right {
+    position: absolute;
+    right: 0%;
+}
+
+#about, #code p, #code table {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#about, #code {
+    margin-bottom: 30px;
+}
+
+#about {
+    margin-top: 10%;
+}
+
+#code {
+    margin-top: 5%;
+}
+
+#code h1 {
+    margin-bottom: 10px;
+}
+
+#code table *, #class-code {
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#code tr {
+    margin: 10px 0;
+}
+
+#code table td {
+    padding: 10px;
+}
+
+#code table td:nth-child(1) {
+    text-align: center;
+}
+
+#code table img {
+    display: block;
+    margin: auto;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+#code .link {
+    color: white;
+    border-radius: 4px;
+}
+
+#code .link:hover {
+    color: black;
+}
+
+#class-code {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .spacer {
+        margin-bottom: 5%;
+    }
+
+    nav * {
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #rightlinks * {
+        padding: 5px 7px;
+    }
+
+    #home {
+        height: 30px;
+        background-size: 25px 25px;
+        background-position: 0 2px;
+        text-indent: 30px;
+    }
+
+    .wrapper {
+        width: 300px;
+        margin-left: -150px;
+    }
+
+    #icons {
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+
+    .fa {
+        font-size: 45px;
+        width: 65px !important;
+    }
+
+    #home1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    #home2 {
+        font-size: 60px;
+    }
+
+    #home3 {
+        font-size: 20px;
+    }
+
+    #home4 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    #home4 a {
+        width: 40px;
+        padding-bottom: 5px;
+    }
+
+    #home4 a:hover {
+        color: white;
+        background: black;
+    }
+
+    #about p, #code p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #code table *, #class-code {
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
