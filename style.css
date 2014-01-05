@@ -198,6 +198,10 @@ body p {
     margin-top: 10px;
 }
 
+#notfound {
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
     .spacer {
         margin-bottom: 5%;
