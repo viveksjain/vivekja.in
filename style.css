@@ -78,6 +78,18 @@ nav a:hover {
     text-align: center;
 }
 
+#icons_help {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#icons_help span {
+    display: inline-block;
+    width: 112px;
+    margin: 0 12px;
+    color: white;
+}
+
 .link {
     color: white;
     border: 1px solid black;
@@ -233,6 +245,16 @@ body p {
         font-size: 20px;
         margin-top: 50px;
         padding: 20px 0;
+    }
+
+    #icons_help {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    #icons_help span {
+        width: 67px;
+        margin: 0 2px;
     }
 
     .fa {
