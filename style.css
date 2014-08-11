@@ -214,6 +214,21 @@ body p {
     text-align: center;
 }
 
+.pull-left {
+    float: left;
+}
+
+.lost-icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -40px;
+}
+
+.support-email {
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 600px) {
     .spacer {
         margin-bottom: 5%;
