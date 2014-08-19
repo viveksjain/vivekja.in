@@ -39,27 +39,28 @@
       <p id="home2">Vivek Jain</p>
       <p id="home3">and I like to</p>
       <p id="home4">
-        <a href="#" id="left" class="link" onclick="incLike(-1)">&lt;</a>
+        <a href="#" id="left" class="link" onclick="incLike(-1)"><span>&lt;</span></a>
         <span id="likes">build stuff</span>
-        <a href="#" id="right" class="link" onclick="incLike(1)">&gt;</a>
+        <a href="#" id="right" class="link" onclick="incLike(1)"><span>&gt;</span></a>
       </p>
     </div>
 
-    <div id="icons" class="stretch">
+    <div id="icons_container" class="stretch">
       <div class="wrapper">
-        <div>
-          <a href="https://github.com/viveksjain"><i class="link fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/viveksanjayjain"><i class="link fa fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/vivek.sanjay.jain"><i class="link fa fa-facebook"></i></a>
-          <a href="mailto:vivek@vivekja.in"><i class="link fa fa-envelope"></i></a>
-        </div>
-
-        <div id="icons_help">
-          <span>GitHub</span>
-          <span>LinkedIn</span>
-          <span>Facebook</span>
-          <span>Email</span>
-        </div>
+        <table>
+          <tr id="icons">
+            <td><a href="https://github.com/viveksjain"><i class="link fa fa-github"></i></a></td>
+            <td><a href="https://www.linkedin.com/in/viveksanjayjain"><i class="link fa fa-linkedin"></i></a></td>
+            <td><a href="https://www.facebook.com/vivek.sanjay.jain"><i class="link fa fa-facebook"></i></a></td>
+            <td><a href="mailto:vivek@vivekja.in"><i class="link fa fa-envelope"></i></a></td>
+          </tr>
+          <tr id="icons_help">
+            <td><span>GitHub</span></td>
+            <td><span>LinkedIn</span></td>
+            <td><span>Facebook</span></td>
+            <td><span>Email</span></td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
