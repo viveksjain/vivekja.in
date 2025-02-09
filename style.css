@@ -36,10 +36,6 @@ nav * {
     padding: 7px 10px;
 }
 
-#rightlinks > a:nth-child(1) {
-    border-right: solid 1px white;
-}
-
 nav a:hover {
     color: black;
     background: white;
@@ -48,10 +44,10 @@ nav a:hover {
 #home {
     display: inline-block;
     background-image: url('icons/favicon-inverse.png');
-    background-size: 30px 30px;
-    background-position: 5px 2px;
+    background-size: 26px 26px;
+    background-position: 5px 6px;
     background-repeat: no-repeat;
-    text-indent: 40px;
+    text-indent: 35px;
     padding-right: 7px;
 }
 
@@ -87,7 +83,8 @@ nav a:hover {
     width: 100px;
 }
 
-#icons_help td, #icons_help a {
+#icons_help td,
+#icons_help a {
     color: white;
 }
 
@@ -156,11 +153,14 @@ body p {
     line-height: 80px;
 }
 
-#about, #code p, #code table {
+#about,
+#code p,
+#code table {
     font-family: 'Open Sans', sans-serif;
 }
 
-#about, #code {
+#about,
+#code {
     margin-bottom: 30px;
 }
 
@@ -176,7 +176,8 @@ body p {
     margin-bottom: 10px;
 }
 
-#code table *, #class-code {
+#code table *,
+#class-code {
     color: black;
     font-size: 15px;
     line-height: 20px;
@@ -220,17 +221,6 @@ body p {
 
 .pull-left {
     float: left;
-}
-
-.lost-icon {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: -40px;
-}
-
-.support-email {
-    margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -320,12 +310,14 @@ body p {
         line-height: 30px;
     }
 
-    #about p, #code p {
+    #about p,
+    #code p {
         font-size: 15px;
         line-height: 20px;
     }
 
-    #code table *, #class-code {
+    #code table *,
+    #class-code {
         font-size: 12px;
         line-height: 15px;
     }
